@@ -12,5 +12,5 @@ dependencies:
   - scipy
   - pip:
     - git+https://github.com/fraterenz/futils@v0.0.1
-    - git+https://github.com/fraterenz/hscpy@v0.1.0
+    - git+https://github.com/fraterenz/hscpy@v0.1.2
 
