@@ -13,7 +13,7 @@ PATH2SAVE=/data/scratch/hfx923/hsc-draft/${VERSION}
 
 echo "run hsc seed ${SGE_TASK_ID} ${PATH2SAVE} $(date +"%T")"
 
-${PATH2HSC}/target/release/hsc -c 200000 -y 82 -r 1 --b0 1 --mu-exp 4 --mu-division 1.2 --mu-background 11.6 --p-asymmetric 0 --subsample 368 --snapshots 0 29 38 48 63 76 77 81 --save-sfs-only --seed ${SGE_TASK_ID} --sequential $PATH2SAVE
+${PATH2HSC}/target/release/hsc -c 200000 -y 82 -r 1 --b0 1 --mu-exp 4 --mu-division 1.2 --mu-background 11.6 --p-asymmetric 0 --subsample 368 --snapshots 0 29 38 48 63 76 77 81 --seed ${SGE_TASK_ID} --sequential $PATH2SAVE
 
 echo "end hsc $(date +"%T")"
 
