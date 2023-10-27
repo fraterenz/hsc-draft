@@ -3,7 +3,7 @@
 #$ -l h_vmem=16G
 #$ -j y
 #$ -l h_rt=01:0:0
-#$ -t 1-20000
+#$ -t 1-40000
 #$ -o jobs/$JOB_NAME.$JOB_ID.$TASK_ID.out
 
 PATH2HSC=/data/home/hfx923/hsc
