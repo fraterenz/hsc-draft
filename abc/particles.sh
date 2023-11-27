@@ -3,7 +3,7 @@
 #$ -l h_vmem=32G
 #$ -j y
 #$ -l h_rt=01:0:0
-#$ -t 1-10
+#$ -t 1-60000
 #$ -o jobs/$JOB_NAME.$JOB_ID.$TASK_ID.out
 if [ "$#" -ne 1 ]; then
     echo "Illegal number of arguments: must provide one parameters.txt file"
