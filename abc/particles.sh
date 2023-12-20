@@ -18,7 +18,7 @@ PATH2SAVE=/data/scratch/hfx923/hsc-draft/${VERSION}
 echo "run hsc seed ${SGE_TASK_ID} ${PATH2SAVE} $(date +"%T")"
 INPUT_ARGS=$(sed -n "${SGE_TASK_ID}p" ${PATH2PARAMS})
 
-${PATH2HSC}/target/release/hsc $INPUT_ARGS --p-asymmetric 0 --subsample 368 --snapshots 0 29 38 48 63 76 77 81 --seed $SGE_TASK_ID --sequential $PATH2SAVE
+${PATH2HSC}/target/release/hsc $INPUT_ARGS --subsamples 216 390 407 380 362 361 367 451 343 --snapshots 0 0 29 38 48 63 76 77 81 --seed $SGE_TASK_ID --sequential $PATH2SAVE
 
 echo "end hsc $(date +"%T")"
 
